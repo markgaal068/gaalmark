@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+/* Stílus: navigációs bar */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky{
+    padding: 10px 0;
+    background: rgb(208, 122, 64);
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}
+
+.navbar .logo .img{
+    position: block;
+}
+
+.navbar .logo a span{
+    color: rgb(208, 122, 64);
+}
+
+.navbar.sticky .logo a span{
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;  
+    transition: color 0.3s ease;
+}
+
+
+.navbar .menu li a:hover{
+    color: rgb(208, 122, 64);
+}
+
+.navbar.sticky .menu li a:hover{
+    color: rgb(125, 125, 125);
+}
+
+/* Stílus: Menü gomb*/
+
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:rgb(208, 122, 64);
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: black;
+    z-index: 998;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.asd{
+    bottom: 30px;
+    opacity: 100;
+    pointer-events: all;
+}
+
+
+/* Stílus: főoldal*/
+
+.home{
+    display: flex;
+    background: url(./img/hatterek/hatter.jpg) no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 2px solid black;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 35px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;  
+}
+
+.home .home-content .text-2{
+    font-size: 70px;
+    font-weight: 600px;
+    margin-left: -3px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;  
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;  
+}
+
+.home .home-content .text-3 span{
+    color: rgb(208, 122, 64);
+    font-weight: 500px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;  
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: rgb(208, 122, 64);
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(208, 122, 64);
+    transition:all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: white;
+    background: none;
+}
+
+
+/* ALL SIMILAR CONTENT STYLING CODE*/
+
+section{
+    padding: 100px 0px;
+}
+
+.about, .services, .contact, footer, .teams{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(125, 125, 125);
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 320px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(208, 122, 64);
+    padding: 5px;
+    background: rgb(125, 125, 125);
+    transform: translateX(-50%);
+}
+
+/*Stílus: ABOUT*/
+.about .title::after{
+    content: "Ki vagyok én?";
+}
+
+
+.about .about-content, .services .serv-content, .contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .right{
+    width: 45%;
+}
+
+.about .about-content .right .text{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: rgb(208, 122, 64);
+    margin-bottom: 100px
+}
+
+.about .about-content .right .p{
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    color: black;
+    text-decoration: underline;
+}
+
+.about .about-content .right span a{
+    display: inline-block;
+    background: rgb(208, 122, 64);
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(208, 122, 64);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.about .about-content .right a:hover{
+    color: rgb(208, 122, 64);
+    background: none;
+}
+
+.about .about-content .left{
+    width: 45%;
+
+}
+
+.about .about-content .left img{
+    height: 650px;
+    width: 550px;
+    object-fit:cover;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+
+/*Stílus: Szolgáltatások*/
+
+.services .title::after{
+    content: "Mit adok neked?";
+}
+
+.services .serv-content .card{
+    width: 30%;
+    background: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.services .serv-content .card:hover{
+    background: rgb(208, 122, 64);
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.1);
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+    color: rgb(208, 122, 64);
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i{
+    color: black;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: black;
+}
+
+
+/*Stílus: Kontakt rész*/
+
+.contact .title::after{
+    content: "Írj nekem!";
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: rgb(208, 122, 64);
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+    margin-bottom: -8px;
+}
+
+.contact .contact-content .info .sub-title{
+    color: ghostwhite;
+    opacity: 0.8;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+} 
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width: 170px
+}
+
+
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(208, 122, 64);
+    background: rgb(208, 122, 64);
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    color: rgb(208, 122, 64);
+    background: none;
+}
+
+
+/*Stílus: Footer*/
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100;
+    height: auto;
+    width: auto;
+    padding-top: 30px;
+    color: black;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content h3 span{
+    color:rgb(208, 122, 64);
+}
+
+.footer-content p{
+    max-width: 500p;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover i{
+    color: rgb(208, 122, 64);
+}
+
+.footer-bottom{
+    width: auto;
+    pad: 20px 0;
+    text-align: center;
+    background: #000;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+.footer-bottom a{
+    text-transform: uppercase;
+    color: rgb(208, 122, 64);
+    font-weight: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*responsive media query start */
+@media(max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media(max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media(max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d"
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(208, 122, 64);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    }
+    
+    .home .home-content .text-3{
+        font-size: 35px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .about-content .column{
+        width: 50%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+    .services .serv-content .card{
+        width: 51%;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+
+}
+
+@media(max-width: 690px){
+
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 60px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    }
+    
+    .home .home-content .text-3{
+        font-size: 32px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    }
+
+    .home .home-content a{
+        font-size: 20px;
+    }
+
+    .services .serv-content .card{
+        width: 100%;
+    }
+
+    .teams .carousel .card{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+
+    .home .home-content .text-2{
+        font-size: 50px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    }
+    
+    .home .home-content .text-3{
+        font-size: 27px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    }
+}

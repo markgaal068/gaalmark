@@ -13,5 +13,4 @@ $txt = "Kaptál egy e-mailt ".$Name."-től".\n\n".$Message;
 
 mail($EmailTo, $Subject, $txt, $headers)
 
-header("Location: index.html?mailsend");
 ?>

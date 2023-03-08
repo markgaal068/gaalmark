@@ -13,4 +13,6 @@ $txt = "Kaptál egy e-mailt ".$Name."-től".\n\n".$Message;
 
 mail($EmailTo, $Subject, $txt, $headers)
 
+header("Location:index.html?status=success"); //redirect to your html with status
+
 ?>

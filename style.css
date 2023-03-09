@@ -379,33 +379,33 @@ section .title::after{
     opacity: 0.8;
 }
 
-.contact .right form .fields{
+.contact .right .form .fields{
     display: flex;
 }
 
-.contact .right form .field,
-.contact .right form .fields .field{
+.contact .right .form .field,
+.contact .right .form .fields .field{
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
 
-.contact .right form .textarea{
+.contact .right .form .textarea{
     height: 80px;
     width: 100%;
 } 
 
-.contact .right form .name{
+.contact .right .form .name{
     margin-right: 10px;
 }
 
-.contact .right form .email{
+.contact .right .form .email{
     margin-left: 10px;
 }
 
 
-.contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right .form .field input,
+.contact .right .form .textarea textarea{
     height: 100%;
     width: 100%;
     border: 1px solid black;
@@ -416,18 +416,18 @@ section .title::after{
     font-family: 'Poppins', sans-serif;
 }
 
-.contact .right form .textarea textarea{
+.contact .right .form .textarea textarea{
     padding-top: 10px;
     resize: none;
 }
 
-.contact .right form .button{
+.contact .right .form .button{
     height: 47px;
     width: 170px
 }
 
 
-.contact .right form .button button{
+.contact .right .form .button button{
     width: 100%;
     height: 100%;
     border: 2px solid rgb(208, 122, 64);
@@ -440,7 +440,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.contact .right form .button button:hover{
+.contact .right .form .button button:hover{
     color: rgb(208, 122, 64);
     background: none;
 }

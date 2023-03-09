@@ -52,10 +52,10 @@ $(document).ready(function(){
         fetch('https://markxd.herokuapp.com/email', {
                   method: 'POST',
                   body: JSON.stringify({
-                      "email": document.getElementById('Email'),
-                      "name":  document.getElementById('Name'),
-                      "subject":  document.getElementById('Subject'),
-                      "text":  document.getElementById('Message')
+                    "email": document.getElementById('Email').value,
+                    "name":  document.getElementById('Name').value,
+                    "subject":  document.getElementById('Subject').value,
+                    "text":  document.getElementById('Message').value
                   })
               })
                   .then(response => response.json())

@@ -60,7 +60,7 @@ $(document).ready(function(){
         var json = JSON.stringify(data);
 
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://markxd.herokuapp.com/email%22");
+        xhr.open("POST", "https://markxd.herokuapp.com/email");
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(json);
     })

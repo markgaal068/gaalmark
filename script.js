@@ -49,17 +49,20 @@ $(document).ready(function(){
     
     //Email cucc
     $(".form .submit").click(function(){
-        fetch('https://markxd.herokuapp.com/email', {
-                  method: 'POST',
-                  body: JSON.stringify({
-                    "email": document.getElementById('Email').value,
-                    "name":  document.getElementById('Name').value,
-                    "subject":  document.getElementById('Subject').value,
-                    "text":  document.getElementById('Message').value
-                  })
-              })
-                  .then(response => response.json())
-                  .then(response => console.log(JSON.stringify(response)))
+
+        var data = {
+            "email": document.getElementById('Email').value,
+            "name":  document.getElementById('Name').value,
+            "subject":  document.getElementById('Subject').value,
+            "text":  document.getElementById('Message').value
+          };
+
+        var json = JSON.stringify(data);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://markxd.herokuapp.com/email%22");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(json);
     })
 
 });

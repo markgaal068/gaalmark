@@ -66,9 +66,8 @@ $(document).ready(function(){
         })
             .then((response) => response.json())
             .then((data) => {
-                if(confirm("Sikeres e-mail küldés!")){
+                alert("Sikeres e-mail küldés!")
                     window.location.reload();
-                }
             })
             .catch((error) => {
                 console.error("Error:", error);

@@ -46,4 +46,20 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    
+    //Email cucc
+    function Submit(){
+    fetch('https://markxd.herokuapp.com/email', {
+            method: 'POST',
+            body: JSON.stringify({
+                "email": "rozsnono@gmail.com",
+                "name": "Rozs Norbert",
+                "subject": "Test",
+                "text": "Test"
+            })
+        })
+            .then(response => response.json())
+            .then(response => console.log(JSON.stringify(response)))
+}
+
 });

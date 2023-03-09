@@ -130,20 +130,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">E-mail lehetőség:</div>
-                    <form action="contact.php" method="POST">
+                    <form method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" name="Name" placeholder="Név">
+                                <input id="Name" type="text" name="Name" placeholder="Név">
                             </div>
                             <div class="field email">
-                                <input type="email" name="Email" placeholder="E-mail">
+                                <input id="Email" type="email" name="Email" placeholder="E-mail">
                             </div>
                         </div>   
                         <div class="field">
-                            <input type="text" name="Subject" placeholder="Tárgy">
+                            <input type="text" id="Subject" name="Subject" placeholder="Tárgy">
                         </div>
                         <div class="field textarea">
-                            <textarea name="Message" cols="30" rows="10" placeholder="Fejtsd ki a kérésed pár szóban.."></textarea>
+                            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Fejtsd ki a kérésed pár szóban.."></textarea>
                         </div>
                         <div class="button">
                             <button class="submit" name="submit">Küldés!</button>

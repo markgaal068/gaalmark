@@ -15,14 +15,14 @@ $(document).ready(function(){
 
     //typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Web developer", "Korrepetítor", "Freelancer", "Egyetemista", "IT Szakember"],
+        strings: ["Web developer", "Korrepetítor", "Freelancer", "Egyetemista"],
         typeSpeed: 100, 
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing2", {
-        strings: ["Web developer", "Korrepetítor", "Freelancer", "Egyetemista", "IT Szakember"],
+        strings: ["Web developer", "Korrepetítor", "Freelancer", "Egyetemista"],
         typeSpeed: 100, 
         backSpeed: 60,
         loop: true
@@ -48,18 +48,18 @@ $(document).ready(function(){
 
     
     //Email cucc
-    function Submit(){
-    fetch('https://markxd.herokuapp.com/email', {
-            method: 'POST',
-            body: JSON.stringify({
-                "email": document.getElementById('Email'),
-                "name":  document.getElementById('Name'),
-                "subject":  document.getElementById('Subject'),
-                "text":  document.getElementById('Message')
-            })
-        })
-            .then(response => response.json())
-            .then(response => console.log(JSON.stringify(response)))
-}
+    $(".form .submit").click(function(){
+        fetch('https://markxd.herokuapp.com/email', {
+                  method: 'POST',
+                  body: JSON.stringify({
+                      "email": document.getElementById('Email'),
+                      "name":  document.getElementById('Name'),
+                      "subject":  document.getElementById('Subject'),
+                      "text":  document.getElementById('Message')
+                  })
+              })
+                  .then(response => response.json())
+                  .then(response => console.log(JSON.stringify(response)))
+    })
 
 });

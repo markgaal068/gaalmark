@@ -48,7 +48,10 @@ $(document).ready(function(){
 
     
     //Email cucc
-    $(".form .submit").click(function () {
+    $(".form .button_send").click(function () {
+
+        document.querySelector(".button_send span").classList.add("button--loading");
+        document.querySelector(".button_send span").innerHTML = "";
 
         var data = {
             "email": document.getElementById('Email').value,
@@ -66,13 +69,18 @@ $(document).ready(function(){
         })
             .then((response) => response.json())
             .then((data) => {
-                alert("Sikeres e-mail küldés!")
-                    window.location.reload();
+                alert("Sikeres e-mail küldés!");
+                window.location.reload();
+
+                document.querySelector(".button_send span").classList.remove("button--loading");
+                document.querySelector(".button_send span").innerHTML = "Küldés!";
             })
             .catch((error) => {
                 console.error("Error:", error);
                 alert("Oops!");
+
+                document.querySelector(".button_send span").classList.remove("button--loading");
+                document.querySelector(".button_send span").innerHTML = "Küldés!";
             });
     })
-
 });

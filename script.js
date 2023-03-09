@@ -48,21 +48,32 @@ $(document).ready(function(){
 
     
     //Email cucc
-    $(".form .submit").click(function(){
+    $(".form .submit").click(function () {
 
         var data = {
             "email": document.getElementById('Email').value,
-            "name":  document.getElementById('Name').value,
-            "subject":  document.getElementById('Subject').value,
-            "text":  document.getElementById('Message').value
-          };
+            "name": document.getElementById('Name').value,
+            "subject": document.getElementById('Subject').value,
+            "text": document.getElementById('Message').value
+        };
 
-        var json = JSON.stringify(data);
-
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://markxd.herokuapp.com/email");
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.send(json);
+        fetch("https://markxd.herokuapp.com/email", {
+            method: "POST", // or 'PUT'
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if(confirm("Sikeres e-mail küldés!")){
+                    window.location.reload();
+                }
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                alert("Oops!");
+            });
     })
 
 });

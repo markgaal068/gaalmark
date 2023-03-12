@@ -120,8 +120,8 @@ html{
 .home{
     display: flex;
     background: url(./hatter.jpg) no-repeat center;
-    background-size: auto;
-    height: 100vh;
+    height: 100%;
+    background-size: cover;
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;

@@ -120,7 +120,7 @@ html{
 .home{
     display: flex;
     background: url(./hatter.jpg) no-repeat center;
-    height: 1000%;
+    height: 300%;
     background-size: cover;
     color: white;
     min-height: 500px;

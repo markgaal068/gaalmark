@@ -121,6 +121,7 @@ html{
     display: flex;
     background: url(./hatter.jpg) no-repeat center;
     height: 150vh;
+    background-size: cover;
     color: white;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;

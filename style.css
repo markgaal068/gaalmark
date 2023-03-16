@@ -299,7 +299,6 @@ section .title::after{
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    border:#000 solid;
 }
 
 .services .serv-content .card:hover{

@@ -330,7 +330,9 @@ section .title::after{
     color: black;
 }
 
-
+.services .serv-content .card a{
+    color: black !important;
+}
 /*Stílus: Kontakt rész*/
 
 .contact .title::after{

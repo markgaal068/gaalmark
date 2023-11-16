@@ -60,7 +60,7 @@ $(document).ready(function(){
             "text": document.getElementById('Message').value
         };
 
-        fetch("https://erin-graceful-pigeon.cyclic.app/email", {
+        fetch("https://curious-tank-top-ant.cyclic.app/email", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",

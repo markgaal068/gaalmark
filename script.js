@@ -60,7 +60,7 @@ $(document).ready(function(){
             "text": document.getElementById('Message').value
         };
 
-        fetch("https://curious-tank-top-ant.cyclic.app/email", {
+        fetch("https://magnificent-hen-beret.cyclic.app/email", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",

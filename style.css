@@ -755,3 +755,123 @@ footer{
       transform: rotate(1turn);
     }
   }
+
+
+
+  /*TAILWIND*/
+  .main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 24rem;
+    border: 0.25rem solid #1A365D;
+    animation: slide-in;
+    z-index: 10;
+    background-color: #2D3748;
+    max-height: 40rem;
+    color: #2D3748;
+    font-size: 1rem;
+}
+
+.bg-sky-900 {
+    background-color: #007ace;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.messages {
+    border-top-width: 0.125rem;
+    border-bottom-width: 0.125rem;
+    border-color: #1A365D;
+    overflow-y: auto;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-md {
+    font-size: 0.875rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.bg-slate-800 {
+    background-color: #3E4C59;
+}
+
+.text-gray-200 {
+    color: #EDF2F7;
+}
+
+.px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.border-blue-600 {
+    border-color: #3182CE;
+}
+
+.focus\:border-blue-800:focus {
+    border-color: #2B6CB0;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.hover\:bg-blue-800:hover {
+    background-color: #2B6CB0;
+}
+
+.disabled\:bg-blue-800:disabled {
+    background-color: #2B6CB0;
+}
+
+.stroke-2 {
+    stroke-width: 2;
+}
+
+.fill-none {
+    fill: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

@@ -91,9 +91,6 @@ html{
 
 .scroll-up-btn{
     position: fixed;
-    height: 45px;
-    width: 42px;
-    background:rgb(208, 122, 64);
     right: 30px;
     bottom: 30px;
     text-align: center;
@@ -758,24 +755,24 @@ footer{
 
 
 
-  /*TAILWIND*/
+  /*TAILWIND
   .main {
     display: flex;
     flex-direction: column;
     border-radius: 0.5rem;
     overflow: hidden;
     width: 24rem;
-    border: 0.25rem solid #1A365D;
+    border: 0.25rem solid black;
     animation: slide-in;
     z-index: 10;
-    background-color: #2D3748;
+    background-color: rgb(125, 125, 125);
     max-height: 40rem;
-    color: #2D3748;
+    color: white;
     font-size: 1rem;
 }
 
 .bg-sky-900 {
-    background-color: #007ace;
+    background-color: rgb(208, 122, 64);
 }
 
 .text-white {
@@ -805,7 +802,7 @@ footer{
 .messages {
     border-top-width: 0.125rem;
     border-bottom-width: 0.125rem;
-    border-color: #1A365D;
+    border-color: #000;
     overflow-y: auto;
     padding-bottom: 1rem;
     padding-top: 0.5rem;
@@ -828,11 +825,11 @@ footer{
 }
 
 .bg-slate-800 {
-    background-color: #3E4C59;
+    background-color: white;
 }
 
 .text-gray-200 {
-    color: #EDF2F7;
+    color: #000;
 }
 
 .px-2 {
@@ -841,11 +838,11 @@ footer{
 }
 
 .border-blue-600 {
-    border-color: #3182CE;
+    border-color: rgb(208, 122, 64);
 }
 
 .focus\:border-blue-800:focus {
-    border-color: #2B6CB0;
+    border-color: rgb(208, 122, 64);
 }
 
 .rounded-full {
@@ -857,11 +854,11 @@ footer{
 }
 
 .hover\:bg-blue-800:hover {
-    background-color: #2B6CB0;
+    background-color: rgb(208, 122, 64);
 }
 
 .disabled\:bg-blue-800:disabled {
-    background-color: #2B6CB0;
+    background-color: rgb(208, 122, 64);
 }
 
 .stroke-2 {
@@ -874,4 +871,4 @@ footer{
 
 .cursor-pointer {
     cursor: pointer;
-}
+}*/

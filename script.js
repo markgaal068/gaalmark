@@ -84,3 +84,36 @@ $(document).ready(function(){
             });
     })
 });
+
+
+
+// $('.aimsg').click(function(){
+// const KEY= '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';
+// const apiUrl = 'https://api.openai.com/v1/chat/completions';
+// console.log("api url");
+// const requestData = {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'Authorization': `Bearer ${KEY}`
+//   },
+//   body: JSON.stringify({
+//     model: "gpt-3.5-turbo",
+//     messages: [
+//       {
+//         role: "user",
+//         content: "Compose a poem that explains the concept of recursion in programming."
+//       }
+//     ]
+//   })
+// };
+
+// fetch(apiUrl, requestData)
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+//   .catch(error => console.error('Error:', error));
+// } 
+// );
+
+
+

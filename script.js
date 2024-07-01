@@ -60,7 +60,7 @@ $(document).ready(function(){
             "text": document.getElementById('Message').value
         };
 
-        fetch("https://candied-concrete-condition.glitch.me", {
+        fetch("https://candied-concrete-condition.glitch.me/email", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",

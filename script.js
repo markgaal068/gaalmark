@@ -77,7 +77,7 @@ $(document).ready(function(){
             })
             .catch((error) => {
                 console.error("Error:", error);
-                alert("Oops!");
+                alert("A funkció jelenleg nem elérhető! Kérlek írj e-mailt a gaalmark.markit@gmail.com e-míil címre!");
 
                 document.querySelector(".button_send span").classList.remove("button--loading");
                 document.querySelector(".button_send span").innerHTML = "Küldés!";

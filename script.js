@@ -60,7 +60,7 @@ $(document).ready(function(){
             "text": document.getElementById('Message').value
         };
 
-        fetch("https://magnificent-hen-beret.cyclic.app/email", {
+        fetch("https://candied-concrete-condition.glitch.me", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",
@@ -77,7 +77,7 @@ $(document).ready(function(){
             })
             .catch((error) => {
                 console.error("Error:", error);
-                alert("A funkció jelenleg nem elérhető! Kérlek írj e-mailt a gaalmark.markit@gmail.com e-míil címre!");
+                alert("A funkció jelenleg nem elérhető! Kérlek írj e-mailt a gaalmark.markit@gmail.com e-mail címre!");
 
                 document.querySelector(".button_send span").classList.remove("button--loading");
                 document.querySelector(".button_send span").innerHTML = "Küldés!";
